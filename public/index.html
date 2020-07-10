@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StopWatch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <h1 class="head1">STOP WATCH</h1>
+        </div>
+        <div class="row screen">
+            <h1>
+                <span id="min"> 00</span>:
+                <span id="sec"> 00</span>:
+                <span id="msec">00</span>
+            </h1>
+        </div>
+        <div class="row buttons">
+            <button class="start" id="btn" onclick="start() , visibleoff()" >START</button>
+            <button class="pause" onclick="stop() ,  visibleon()">PAUSE</button>
+            <button class="reset" onclick="reset() ,  visibleon()">RESET</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
